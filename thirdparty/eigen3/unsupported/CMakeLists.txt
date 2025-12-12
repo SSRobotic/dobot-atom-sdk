@@ -1,11 +1,32 @@
-add_subdirectory(Eigen)
-if(EIGEN_BUILD_DOC)
-  add_subdirectory(doc EXCLUDE_FROM_ALL)
-endif()
-if(BUILD_TESTING)
-  if(EIGEN_LEAVE_TEST_IN_ALL_TARGET)
-    add_subdirectory(test) # can't do EXCLUDE_FROM_ALL here, breaks CTest
-  else()
-    add_subdirectory(test EXCLUDE_FROM_ALL)
-  endif()
-endif()
+set(Eigen_HEADERS 
+  AdolcForward
+  AlignedVector3
+  ArpackSupport
+  AutoDiff
+  BVH
+  EulerAngles
+  FFT
+  IterativeSolvers 
+  KroneckerProduct
+  LevenbergMarquardt
+  MatrixFunctions 
+  MoreVectorization
+  MPRealSupport
+  NonLinearOptimization
+  NumericalDiff
+  OpenGLSupport
+  Polynomials
+  Skyline 
+  SparseExtra
+  SpecialFunctions
+  Splines
+  )
+
+install(FILES
+  ${Eigen_HEADERS}
+  DESTINATION ${INCLUDE_INSTALL_DIR}/unsupported/Eigen COMPONENT Devel
+  )
+
+install(DIRECTORY src DESTINATION ${INCLUDE_INSTALL_DIR}/unsupported/Eigen COMPONENT Devel FILES_MATCHING PATTERN "*.h")
+
+add_subdirectory(CXX11)
