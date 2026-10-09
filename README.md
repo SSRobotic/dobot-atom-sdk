@@ -1,3 +1,22 @@
+# DOBOT Atom SDK · SSRobotic Collection
+
+> **This collection has moved into [Humanoid Robot Hub](https://github.com/SSRobotic/humanoid-robot-hub).**
+> Browse the consolidated code: [collections/dobot/atom-sdk](https://github.com/SSRobotic/humanoid-robot-hub/tree/main/collections/dobot/atom-sdk) · [Search resources](https://ssrobotic.github.io/humanoid-robot-hub/)
+
+C++ SDK with RPC, DDS and joint recording examples.
+
+Curated and organized by **SSRobotic — Robotics Engineer & Open-source Curator**. Original source: [Dobot-Arm](https://github.com/Dobot-Arm/dobot_atom_sdk). The original code, documentation and license notices retain their respective authorship.
+
+## What this collection provides
+
+C++ SDK with RPC, DDS and joint recording examples.
+
+The Hub contains a snapshot of this repository at `28188feda1b76b99e9a956102f351b76f4a85b92`. This repository is retained as an archived reference so previous links and history remain available. Updates to the curated collection belong in the Hub.
+
+---
+
+## Original documentation
+
 # SSFocus_dobot_atom_sdk-main
 
 ## 📋 Content
